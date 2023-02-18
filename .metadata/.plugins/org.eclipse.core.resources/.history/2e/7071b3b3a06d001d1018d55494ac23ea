@@ -1,0 +1,21 @@
+package com.virtusa;
+
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) 
+	{
+		ArrayList<Integer> arr = new ArrayList<>();
+		arr.add(120);
+		arr.add(10);
+		arr.add(1000);
+		
+		arr.forEach(
+				(n)->System.out.println(n));
+		
+		
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.virtusa;
+class MailThread extends Thread
+{
+	public void run()
+	{
+		System.out.println("Child Thread");
+	}
+}
+public class ThreadRelatedMethod {
+
+	public static void main(String[] args)
+	{
+		System.out.println(Thread.currentThread().getPriority());
+		System.out.println(Thread.currentThread().getName());
+		System.out.println(Thread.currentThread().isDaemon());
+		
+		MailThread mt = new MailThread();
+		mt.start();
+		
+		System.out.println("name: "+mt.getName());
+		mt.setName("Shamdal");
+		mt.setPriority(7);
+		System.out.println(mt.getName());
+		System.out.println("Latest Priority : "+mt.getPriority());
+
+	}
+
+}

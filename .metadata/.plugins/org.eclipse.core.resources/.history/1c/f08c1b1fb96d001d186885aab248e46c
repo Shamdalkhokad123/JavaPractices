@@ -1,0 +1,40 @@
+package com.virtusa;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.stream.Collectors;
+
+public class LinkedHashSet1 {
+
+	public static void main(String[] args) {
+		LinkedHashSet<Integer> hs = new LinkedHashSet<Integer>();
+		hs.add(100);
+		hs.add(23);
+		hs.add(500);
+		hs.add(345);
+
+		System.out.println(hs);
+
+		LinkedHashSet<String> hs1 = new LinkedHashSet<>();
+		hs1.add("Shamdal");
+		hs1.add("Komal");
+		hs1.add("Mangla");
+
+		hs1.forEach(n -> System.out.println(n));
+
+		System.out.println("Folllowing are useful to understand the customized class");
+
+		LinkedHashSet<Employee> emp = new LinkedHashSet<>();
+		Employee e = new Employee(100, "Shamdal", 90000);
+		Employee e1 = new Employee(111, "Shivdal", 10000);
+		Employee e2 = new Employee(222, "Mehbub", 30000);
+		
+		emp.add(e);
+		emp.add(e1);
+		emp.add(e2);
+		emp.stream().filter((e5)->e5.getSalary()>3000).collect(Collectors.toList());
+
+
+	}
+
+}

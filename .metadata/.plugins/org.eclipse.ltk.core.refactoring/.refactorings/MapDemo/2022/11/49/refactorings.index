@@ -1,0 +1,6 @@
+1669521573070	Extract method 'genericHashMap'
+1669521953673	Extract method 'genericMethod'
+1669522141083	Extract method 'linkedMethod'
+1669522536511	Extract method 'weakHashMap'
+1669523265708	Extract method 'treemapDemo'
+1669524011288	Delete element

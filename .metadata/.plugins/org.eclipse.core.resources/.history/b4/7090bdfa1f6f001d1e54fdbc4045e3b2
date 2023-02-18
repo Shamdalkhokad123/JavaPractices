@@ -1,0 +1,12 @@
+package single.ton;
+
+public class EagerSingleTon {
+
+	public static void main(String[] args) {
+		Singleton1 son = Singleton1.getInstance();
+		Singleton1 son1 = Singleton1.getInstance();
+		son.hashCode();
+
+	}
+
+}

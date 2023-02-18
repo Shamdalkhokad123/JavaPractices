@@ -1,0 +1,21 @@
+import java.io.File;
+
+public class FileInputStream {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter somathing");
+		try
+		{
+			File f = new File("D:/demo.txt");
+			FileOutputStream fis = new FileOutputStream();
+			int ch = fis.
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+}

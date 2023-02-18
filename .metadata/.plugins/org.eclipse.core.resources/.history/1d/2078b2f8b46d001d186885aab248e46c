@@ -1,0 +1,13 @@
+package com.virtusa;
+
+public class TreeSet {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Example of TreeSet Demo");
+		
+		TrreSetDemo<Integer> tr= new TrreSetDemo<>();
+
+	}
+
+}

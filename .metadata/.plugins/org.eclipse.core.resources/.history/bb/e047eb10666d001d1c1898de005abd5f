@@ -1,0 +1,32 @@
+package com.virtusa;
+
+public class ExceptionHandle {
+
+	public static void main(String[] args) 
+	{
+		printdDemo();
+		
+		try {
+			System.out.println(10/0);
+		} catch (ArithmeticException e) 
+		{
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			e.toString();
+		}
+
+	}
+
+	private static void printdDemo() {
+		System.out.println("statement 1");
+		try {
+			System.out.println(10/0);
+		} catch (ArithmeticException e) 
+		{
+			System.out.println("Exception is thrown");
+		}
+		
+		System.out.println("Statement 3");
+	}
+
+}

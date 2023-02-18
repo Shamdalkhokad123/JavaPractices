@@ -1,0 +1,10 @@
+package com.virtusa;
+
+public class BufferInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

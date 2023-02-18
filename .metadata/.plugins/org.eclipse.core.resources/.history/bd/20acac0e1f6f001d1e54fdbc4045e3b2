@@ -1,0 +1,5 @@
+package single.ton;
+
+public class Singleton1 {
+
+}

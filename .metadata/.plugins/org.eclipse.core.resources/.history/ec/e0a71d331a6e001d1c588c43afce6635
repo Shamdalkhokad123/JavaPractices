@@ -1,0 +1,23 @@
+import java.io.File;
+import java.io.FileOutputStream;
+
+public class FileInputStream {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter somathing");
+		try
+		{
+			File f = new File("D:/demo.txt");
+			FileOutputStream fos = new FileOutputStream(f);
+			fos.write(65);
+			fos.close();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+}
