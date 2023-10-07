@@ -24,7 +24,7 @@ public class LoginDAO {
 			 Connection con = DBConnection.getConnection();
 			 
 			 //making statement 
-			 PreparedStatement st = con.prepareStatement("select * from userReg11 where uname = ? and pass= ?");
+			 PreparedStatement st = con.prepareStatement("select * from userreg31 where uname = ? and pass= ?");
 			 
 			 //attach all the parameter
 			 st.setString(1, uname);
@@ -34,7 +34,7 @@ public class LoginDAO {
 			 ResultSet rs = st.executeQuery();
 			 
 			 if(rs.next()) {
-				 fName = rs.getString(3);
+				 fName = rs.getString(4);
 			 }
 			 
 		} catch (Exception e) {
