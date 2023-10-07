@@ -1,0 +1,33 @@
+package com.virtusa;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) 
+	{
+		ArrayList<Integer> arr = new ArrayList<>();
+		arr.add(120);
+		arr.add(10);
+		arr.add(1000);
+		
+		arr.forEach(
+				(n)->System.out.println(n));
+		
+		ArrayList<String> ar = new ArrayList<>();
+		ar.add("Shamdal");
+		ar.add("Shubhan");
+		ar.add("Kushal");
+		
+		Collections.sort(ar,new Comparator<String>() {
+			public int compare(String s1,String s2)
+			{
+				return s1.compareTo(s2);
+			}
+		});
+		ar.forEach((n)->System.out.println(n));
+	}
+
+}

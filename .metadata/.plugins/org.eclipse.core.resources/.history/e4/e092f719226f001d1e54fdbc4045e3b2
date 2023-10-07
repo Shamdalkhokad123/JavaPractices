@@ -1,0 +1,20 @@
+package single.ton;
+
+public class EagerSingleTon {
+
+	public static void main(String[] args) {
+		Singleton1 son = Singleton1.getInstance();
+		Singleton1 son1 = Singleton1.getInstance();
+		
+		
+		System.out.println(son.hashCode());
+		System.out.println(son1.hashCode());
+		
+		Singleton2 osn = Singleton2.getInstance();
+		Singleton2 osn2 = Singleton2.getInstance();
+		System.out.println(osn.hashCode());
+		System.out.println(osn.hashCode());
+
+	}
+
+}

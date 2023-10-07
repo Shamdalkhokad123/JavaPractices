@@ -1,0 +1,5 @@
+1669441902465	Extract method 'printdDemo'
+1669452066045	Extract method 'methodDemo'
+1669452341652	Extract method 'numberFormat'
+1669452475050	Extract method 'illegalArgument'
+1669452654458	Extract method 'illegalThreadState'

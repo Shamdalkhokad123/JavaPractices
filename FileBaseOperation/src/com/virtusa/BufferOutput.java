@@ -1,0 +1,33 @@
+package com.virtusa;
+
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+
+public class BufferOutput {
+
+	public static void main(String[] args) 
+	{
+		writeToBuffer();
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+	private static void writeToBuffer() {
+		try {
+			BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("D:/demo2.txt"));
+			String comName = "Ind vs NZ match";
+			byte b[] = comName.getBytes();
+			bos.write(b);
+			
+			System.out.println("Success");
+			bos.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

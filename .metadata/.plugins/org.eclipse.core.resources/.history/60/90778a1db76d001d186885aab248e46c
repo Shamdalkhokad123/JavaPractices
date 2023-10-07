@@ -1,0 +1,23 @@
+package com.virtusa;
+
+import java.util.TreeSet;
+
+public class TrreSetDemo {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Example of TreeSet Demo");
+		
+		TreeSet<Integer> tr= new TreeSet<>();
+		tr.add(100);
+		
+		tr.add(200);
+		tr.add(300);
+		
+		tr.add(50);
+		
+		System.out.println(tr);
+
+	}
+
+}

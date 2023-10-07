@@ -1,0 +1,19 @@
+package org.virtusa;
+
+import java.util.HashMap;
+
+public class HashMapDemo {
+
+	public static void main(String[] args)
+	{
+		HashMap hm = new HashMap();
+		hm.put("Shamdal", 100);
+		hm.put(100, "Radha");
+		hm.put(200, 500);
+		hm.put("Komal", "Rahul");
+		
+		hm.forEach((k,v)->System.out.println(k+"     "+v));
+
+	}
+
+}

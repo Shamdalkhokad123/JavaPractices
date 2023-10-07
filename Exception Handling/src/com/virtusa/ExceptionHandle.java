@@ -1,0 +1,69 @@
+package com.virtusa;
+
+import java.util.Scanner;
+
+public class ExceptionHandle {
+
+	public static void main(String[] args) 
+	{
+		//printdDemo();
+		
+		//methodDemo();
+		
+		//numberFormat();
+		
+		//illegalArgument();
+		
+		illegalThreadState();
+	}
+
+	private static void illegalThreadState() {
+		Thread t = new Thread(new Runnable()
+				{
+			public void run()
+			{
+				System.out.println("Thread Programming");
+			}
+				});
+		t.start();
+		t.start();
+	}
+
+	private static void illegalArgument() {
+		Thread t = new Thread();
+		t.setPriority(10);
+		t.setPriority(100);
+	}
+
+	private static void numberFormat() {
+		Scanner ac = new Scanner(System.in);
+		
+		int num = Integer.parseInt("11");
+		int num2 = Integer.parseInt("ten");
+		System.out.println(num+"  "+num2);
+	}
+
+	private static void methodDemo() {
+		try {
+			System.out.println(10/0);
+		} catch (ArithmeticException e) 
+		{
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			e.toString();
+		}
+	}
+
+	private static void printdDemo() {
+		System.out.println("statement 1");
+		try {
+			System.out.println(10/0);
+		} catch (ArithmeticException e) 
+		{
+			System.out.println("Exception is thrown");
+		}
+		
+		System.out.println("Statement 3");
+	}
+
+}

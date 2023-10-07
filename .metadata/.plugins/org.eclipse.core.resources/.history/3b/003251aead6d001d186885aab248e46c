@@ -1,0 +1,15 @@
+package com.virtusa;
+
+public class VectorDemo {
+
+	public static void main(String[] args) 
+	{
+		Vector vt = new Vector();
+		
+		for(int i=0;i<4;i++)
+		{
+			vt.
+		}
+	}
+
+}
