@@ -7,19 +7,23 @@ public class ProductBean implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String pCode,pName;
+	private int pCode;
+	private String pName;
 	private float pPrice;
 	private int pQty;
 	public ProductBean() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public String getpCode() {
+	
+	public int getpCode() {
 		return pCode;
 	}
-	public void setpCode(String pCode) {
+
+	public void setpCode(int pCode) {
 		this.pCode = pCode;
 	}
+
 	public String getpName() {
 		return pName;
 	}
